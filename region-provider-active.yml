@@ -7,15 +7,10 @@ spring:
   application:
     name: vm-provider
   datasource:
-    url: jdbc:mongodb://localhost:27027/regionprovider
+    url: jdbc:mongodb://localhost:27027/regionalprovider
     username: admin
-    password: 1
-  jpa:
-    hibernate:
-      ddl-auto: update
-      naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-
+    password: admin
+  
 eureka:
   instance:
     lease-renewal-interval-in-seconds: 10

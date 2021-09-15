@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: vm-provider
+    name: region-provider
   datasource:
     url: jdbc:mongodb://localhost:27027/regionalprovider
     username: admin

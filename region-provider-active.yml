@@ -10,6 +10,13 @@ spring:
     url: jdbc:mongodb://localhost:27027/regionalprovider
     username: admin
     password: admin
+  servlet:
+    multipart:
+      maxFileSize: 128MB
+      maxRequestSize: 128MB
+  http:
+    multipart:
+      enabled: true
   
 eureka:
   instance:
@@ -20,3 +27,7 @@ eureka:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
     enabled: true
     register-with-eureka: true
+
+spring.servlet.multipart.max-file-size=128MB
+spring.servlet.multipart.max-request-size=128MB
+spring.http.multipart.enabled=true

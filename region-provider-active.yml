@@ -7,7 +7,7 @@ spring:
   application:
     name: region-provider
   datasource:
-    url: jdbc:mongodb://localhost:27027/regionalprovider
+    url: jdbc:mongodb://localhost:27027/regionprovider
     username: admin
     password: admin
   servlet:

@@ -1,0 +1,27 @@
+server:
+  port: 8091
+  error:
+    include-stacktrace: never
+
+spring:
+  application:
+    name: vm-provider
+  datasource:
+    url: jdbc:mongodb://localhost:27027/regionprovider
+    username: admin
+    password: 1
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 10
+  client:
+    registry-fetch-interval-seconds: 5
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+    enabled: true
+    register-with-eureka: true

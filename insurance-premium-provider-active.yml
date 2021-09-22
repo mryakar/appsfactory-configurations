@@ -7,7 +7,7 @@ spring:
   application:
     name: insurance-premium-provider
   datasource:
-    url: jdbc:mongodb://mongodb:27027/
+    url: jdbc:mongodb://mongo:27027/
     username: admin
     password: admin
   

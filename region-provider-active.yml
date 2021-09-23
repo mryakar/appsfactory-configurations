@@ -19,6 +19,7 @@ spring:
       enabled: true
   data:
     mongodb:
+      uri: mongodb://mongo:27017/
       auto-index-creation: true
   
 eureka:

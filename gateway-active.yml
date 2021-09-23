@@ -1,16 +1,8 @@
 server:
   port: 8080
+  error:
+    include-stacktrace: never
  
-eureka:
-  instance:
-    lease-renewal-interval-in-seconds: 10
-  client:
-    registry-fetch-interval-seconds: 5
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://eureka-service:8761/eureka}
-    enabled: true
-    register-with-eureka: true
-
 spring:
   application:
     name: gateway
@@ -31,3 +23,13 @@ spring:
         uri: lb://INSURANCE-PREMIUM-PROVIDER
         predicates:
         - Path=/api/premium/**
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 10
+  client:
+    registry-fetch-interval-seconds: 5
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://eureka-service:8761/eureka}
+    enabled: true
+    register-with-eureka: true

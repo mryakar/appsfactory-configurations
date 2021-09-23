@@ -19,9 +19,11 @@ spring:
       enabled: true
   data:
     mongodb:
-      uri: mongodb://mongo:27017/regions
+      host: mongo
+      port: 27017
       username: admin
       password: admin
+      database: regions
       auto-index-creation: true
   
 eureka:

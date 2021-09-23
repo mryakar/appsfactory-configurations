@@ -7,9 +7,18 @@ spring:
   application:
     name: insurance-premium-provider
   datasource:
-    url: jdbc:mongodb://mongo:27027/
+    url: jdbc:mongodb://mongo:27027/premiums
     username: admin
     password: admin
+  data:
+    mongodb:
+      host: mongo
+      port: 27017
+      username: admin
+      password: admin
+      database: premiums
+      authentication-database: admin
+      auto-index-creation: true
   
 eureka:
   instance:

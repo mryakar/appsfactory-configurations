@@ -7,7 +7,7 @@ spring:
   application:
     name: vm-provider
   datasource:
-    url: jdbc:postgresql://postgres:5432/vmprovider
+    url: jdbc:postgresql://postgres:5432/postgres
     username: postgres
     password: 1
   jpa:

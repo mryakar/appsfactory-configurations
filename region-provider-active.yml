@@ -7,7 +7,7 @@ spring:
   application:
     name: region-provider
   datasource:
-    url: jdbc:mongodb://mongo:27027/
+    url: jdbc:mongodb://mongo:27027/regions
     username: admin
     password: admin
   servlet:
@@ -19,7 +19,7 @@ spring:
       enabled: true
   data:
     mongodb:
-      uri: mongodb://mongo:27017/
+      uri: mongodb://mongo:27017/regions
       auto-index-creation: true
   
 eureka:

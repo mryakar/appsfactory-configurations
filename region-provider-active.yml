@@ -20,6 +20,10 @@ spring:
   data:
     mongodb:
       uri: mongodb://mongo:27017/regions
+      database: regions
+      username: admin
+      password: admin
+      authentication-database: regions
       auto-index-creation: true
   
 eureka:
